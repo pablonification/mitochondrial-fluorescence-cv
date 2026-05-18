@@ -1,0 +1,7 @@
+criterion,evidence,status
+Sumber publik,https://bbbc.broadinstitute.org/BBBC053,valid
+Pemilihan sumber,"BBBC dipilih karena langsung menyediakan dataset mitokondria fluoresensi. Sumber lain seperti Cell Image Library tidak diperlukan untuk demo setelah BBBC053 memenuhi kebutuhan biologis, format, dan sitasi.",valid
+Relevansi biologis,Mitochondria visualized with TOM20 antibody and AlexaFluor 568. The public dataset contains DMSO and FCCP/CCCP-like perturbation classes for mitochondrial morphology analysis.,valid
+Format data,"Dataset penuh: 2048 x 2048 pixel, 16-bit TIFF; demo lokal: 58 full-resolution 2048 x 2048 16-bit TIFF images: 29 DMSO and 29 FCCP",valid with subset
+Kelayakan komputasi,58 TIFF full-resolution diproses lokal; metode classical CV tidak membutuhkan GPU.,valid
+Batasan klaim,"Intensitas fluoresensi diperlakukan sebagai indikator tidak langsung, bukan ATP absolut.",valid
