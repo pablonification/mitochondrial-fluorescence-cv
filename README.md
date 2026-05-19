@@ -68,7 +68,7 @@ langsung respirasi sel atau produksi ATP absolut.
 ## Struktur
 
 ```text
-Tubes/
+mitochondrial-fluorescence-cv/
   app.py
   run_analysis.py
   requirements.txt
@@ -96,34 +96,34 @@ Tubes/
 
 ## Instalasi
 
-Jalankan dari root repository `KDS`:
+Jalankan dari root folder proyek ini:
 
 ```bash
-python3 -m pip install -r Tubes/requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ## Menjalankan Analisis Script
 
 ```bash
-python3 Tubes/run_analysis.py
+python3 run_analysis.py
 ```
 
 Output yang dibuat:
 
-- `Tubes/outputs/image_metrics.csv`
-- `Tubes/outputs/condition_summary.csv`
-- `Tubes/outputs/dataset_validation.csv`
-- `Tubes/outputs/figures/*_preprocessed.png`
-- `Tubes/outputs/figures/*_mask.png`
-- `Tubes/outputs/figures/*_overlay.png`
-- `Tubes/outputs/figures/sample_metric_bars.png`
+- `outputs/image_metrics.csv`
+- `outputs/condition_summary.csv`
+- `outputs/dataset_validation.csv`
+- `outputs/figures/*_preprocessed.png`
+- `outputs/figures/*_mask.png`
+- `outputs/figures/*_overlay.png`
+- `outputs/figures/sample_metric_bars.png`
 
 ## Menjalankan Notebook
 
 Buka atau eksekusi:
 
 ```text
-Tubes/notebooks/bioenergetic_analysis.ipynb
+notebooks/bioenergetic_analysis.ipynb
 ```
 
 Notebook berisi validasi dataset, alasan metode, pemrosesan 58 citra TIFF
@@ -133,7 +133,7 @@ biologis yang tidak overclaim.
 ## Menjalankan Dashboard Streamlit
 
 ```bash
-python3 -m streamlit run Tubes/app.py
+python3 -m streamlit run app.py
 ```
 
 Dashboard menyediakan pilihan citra BBBC053 atau upload citra, tampilan original,
@@ -143,7 +143,7 @@ dataset, dan interpretasi.
 ## Menjalankan Test
 
 ```bash
-python3 -m pytest Tubes/tests -q
+python3 -m pytest tests -q
 ```
 
 Test mencakup loader manifest 58 TIFF, segmentasi synthetic image, connected
